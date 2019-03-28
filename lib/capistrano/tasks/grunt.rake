@@ -22,7 +22,8 @@ task :grunt do
       options << "--gruntfile #{fetch(:grunt_file)}" if fetch(:grunt_file)
       options << fetch(:grunt_tasks) if fetch(:grunt_tasks)
 
-      execute :grunt_binary, options
+      grunt_binary = fetch(:grunt_binary)
+      execute grunt_binary, options
     end
   end
 end
