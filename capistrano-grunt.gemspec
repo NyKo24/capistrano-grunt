@@ -3,10 +3,10 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name          = 'capistrano-grunt'
+  spec.name          = 'nbordes-capistrano-grunt'
   spec.version       = '0.0.4'
-  spec.authors       = ['Scott Walkinshaw', 'Koen Punt']
-  spec.email         = ['scott.walkinshaw@gmail.com', 'me@koen.pt']
+  spec.authors       = ['Nicolas BORDES','Scott Walkinshaw', 'Koen Punt']
+  spec.email         = ['nicolasbordes@me.com','scott.walkinshaw@gmail.com', 'me@koen.pt']
   spec.description   = %q{Grunt support for Capistrano 3.x}
   spec.summary       = %q{Grunt support for Capistrano 3.x}
   spec.homepage      = 'https://github.com/roots/capistrano-grunt'

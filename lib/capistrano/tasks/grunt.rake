@@ -10,6 +10,7 @@ desc <<-DESC
       set :grunt_flags, '--no-color'
       set :grunt_target_path, nil
       set :grunt_roles, :all
+      set :grunt_binary, 'grunt'
 DESC
 task :grunt do
   on roles fetch(:grunt_roles) do
@@ -21,7 +22,7 @@ task :grunt do
       options << "--gruntfile #{fetch(:grunt_file)}" if fetch(:grunt_file)
       options << fetch(:grunt_tasks) if fetch(:grunt_tasks)
 
-      execute :grunt, options
+      execute grunt_binary, options
     end
   end
 end
@@ -36,5 +37,6 @@ namespace :load do
     set :grunt_tasks, nil
     set :grunt_flags, '--no-color'
     set :grunt_roles, :all
+    set :grunt_binary, 'grunt'
   end
 end
