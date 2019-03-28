@@ -3,7 +3,7 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name          = 'nbordes-capistrano-grunt'
+  spec.name          = 'capistrano-grunt'
   spec.version       = '0.0.4'
   spec.authors       = ['Nicolas BORDES','Scott Walkinshaw', 'Koen Punt']
   spec.email         = ['nicolasbordes@me.com','scott.walkinshaw@gmail.com', 'me@koen.pt']
